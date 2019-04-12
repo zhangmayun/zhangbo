@@ -7,7 +7,7 @@
 				</a>
 			</mt-swipe-item>
 		</mt-swipe>
-		<div>{{isPlay}}</div>
+		<div>{{isPlay|translate}}</div>
 		
 		<mt-cell v-for="(song, index) in songList" :title="song.filename" @click.native="playAudio(index)" :key="index">
 			<img src="../assets/images/download_icon.png" width="20" height="20">
@@ -27,6 +27,19 @@
 				songList: []
 			}
 		},
+		filters:{
+      translate:function(value){
+         if(value){
+					return "播放中";
+					}
+					else if(!value){
+						return "暂停";
+					}
+					else{
+						return value;
+					}
+				 }
+			},
 		mounted(){
 			this.getSongs();
 			
