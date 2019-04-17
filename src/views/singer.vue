@@ -1,11 +1,7 @@
 <template>
 	<div class="container">
 		<div class="cell-group">
-<<<<<<< HEAD
-			<div class="cell-item" @click="goRouter(88)">热门音乐的歌手</div>
-=======
 			<div class="cell-item" @click="goRouter(88)">热门歌手</div>
->>>>>>> parent of 3fd06bf... 加上音乐
 		</div>
 		<div class="cell-group">
 			<div class="cell-item" @click="goRouter(1)">华语男歌手</div>
