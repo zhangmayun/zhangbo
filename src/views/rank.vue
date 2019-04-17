@@ -24,7 +24,7 @@
 					spinnerType: 'snake'
 				});
 				this.$http.get('/proxy/rank/list&json=true').then(({data}) => {
-					console.log("张波123456789");
+					console.log("张波123");
 					console.log(data);
 					Indicator.close();
 					this.songList = data.rank.list
